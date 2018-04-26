@@ -52,14 +52,15 @@ def all_supplies_in_holidays(holiday_hash)
           holiday_array = holiday_string.split('')
            holiday_array.each do |word|
             word.capitalize!
-    end
+  end
      new_holiday_string = holiday_array.join(" ")
 
      supply_string = supplies.join(", ")
       puts "  #{new_holiday_string}: #{supply_string}"
    end
-    holiday_hash.flatten
+  end
  end
+
 
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map do |season, holidays|
